@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>合并单元格</title>
+	<style type="text/css">
+		th,td{
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+<table border="1" style="" cellpadding="" cellspacing="">
+	 <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+	<caption>数字表格</caption>
+	<thead>
+	      <tr>
+		      <td>1</td>
+		      <td>2</td>
+		      <td>3</td>
+		      <td>4</td>
+		      <td>5</td>
+	      </tr>
+	</thead>
+	<tbody>
+		<tr>
+		    <td rowspan="2">6</td>
+		  	<td colspan="2">7</td>
+			<td colspan="2">8</td>
+	    </tr>
+	<tr>
+			<td>9</td>
+			<td>10</td>
+			<td rowspan="2">11</td>
+			<td>12</td>
+	</tr>	
+	</tbody>
+	
+</table>
+</body>
+</html>

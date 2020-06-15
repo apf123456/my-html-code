@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>html5的客户端校验</title>
+</head>
+<body>
+	<form action="#" method="get">
+		图书名：<input type="text" name="name" required=""></input><br>
+		图书ISBN： <input type="text" name="isbn" required="" pattern="\d{3}-\d-\d{5}">
+		图书价格： <input type="number" name="pric4e" min="20" max="200"><br>
+		<input type="submit" value="提交">
+	</form>
+
+</body>
+</html>

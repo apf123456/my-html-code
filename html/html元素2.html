@@ -1,0 +1,33 @@
+                                                                                                                                                                                                         <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>html元素2</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" >
+	<meta http-equiv="expires" content="Sat Sep 27 15:12:36 CST2008">
+	<!-- expires表示指定网页的过期时间，一旦过期必须从服务器上下载 -->
+	<meta http-equiv="pragma" content="no-cache">
+	<!-- pragma指定禁止浏览器从本地磁盘缓存中获取该页面内容，浏览器无法脱机访问该页面 -->
+	<meta http-equiv="refresh" content="2">
+	<!-- 设置两秒后自动刷新 -->
+	<meta http-equiv="refresh" content="15;URL=http://www.baidu.com">
+	<base target="_blank" href="C://Users/Administrator/Desktop/htmlcode/html">
+	<!-- 设置基准路径 target有四种_blank _self _parent _top-->
+</head>
+<body>
+	<del datetime="2017-07-07" cite="">2017年已经过去了</del><!-- 定义删除文本datetime定义删除日期，cite定义删除原因，里面填写url -->
+	<ins datetime="2017-07-07" cite>2019年正在进行</ins><!-- 定义插入文本，和del一起用，构成文档的更改和修正 -->
+	<time>2012-02-02</time>
+	<time datetime="2012-12-12" pubdate="">2012年12月</time>
+	<!-- 当time符合yyyy-MM-ddThh:mm格式的日期时间，则可以直接括起来写进去，当不是标准时间的时候，可以在datetime中设置，可以省略前面或者后面，所以一共三种格式，pubdate表示本文档的发布日期 -->
+	<textarea autofocus="" cols="50" rows="5" spellcheck="true"></textarea>			
+			<p>我是大声道<bdi dir="rtl"> 这段 文字 和上 下文有 区别 </bdi>11111</p>
+<p>我是大声道<bdi dir="ltr"> 这段 文字 和上 下文有 区别 </bdi>11111</p>
+<!-- 目前没有一款浏览器支持该标签 -->
+
+<textarea spellcheck="true" rows="3" cols="40"></textarea><br>
+<!-- html为input和textarea提供了拼写检查，如果发现错误，下标就会有红线 -->
+
+<div id="target" hidden="hidden" style="height: 80px">显示的文字内容</div>
+<button onclick="var target=document.getElementById('target');target.hidden=!target.hidden;">显示/隐藏</button>
+</body>
+</html>

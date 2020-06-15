@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="10">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="author" content="apf">
+	<meta name="keywords" content="表单的学习，html的表单学习，前端的学习">
+	<title>表单3</title>
+</head>
+<body>
+	<form action="#" method="get" id="form1" target="_blank">
+		<!-- textarea是一个不需要定义value属性的标签，参数请求值就是textarea标签之间的内容 -->
+		<!-- name作为textarea的请求参数名 -->
+		<!-- 当设置wrap属性为hard时，当表单文本域输入换行时，会将换行符会在浏览器通过get方式传递的地址里面 -->
+		<textarea name="wss" cols="4" rows="2" wrap="hard"></textarea>
+		<input type="submit" value="提交">
+		<input type="submit" value="注册" formaction="http://baidu.com/s" formmethod="get" formtarget="_blank">
+		<input type="submit"  value="本页面提交" formtarget="_self" formaction="http://www.baidu.com" formmethod="get">
+	</form>
+     <textarea form="form1" name="wd" cols="4" rows="2" wrap="soft"></textarea>
+     <!-- form属性的属性值一定是它所属表单的id！！！！！ -->
+     <textarea name="www" id="heihei" cols="20" rows="5" wrap="soft" readonly="" disabled="" maxlength="10">我是文本域中的文字</textarea>
+     <!-- readonly和disabled只有两个属性，首次加载时候禁用，maxlength规定最多输入多少字符  -->
+</body>
+</html>

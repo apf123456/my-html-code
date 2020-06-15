@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>html元素</title>
+</head>
+<body>
+	<!-- 按照语义，一个html文档可分为标题和内容两个主要部分，分别用header和main标签扩进去 -->
+	<header>
+		<h1 style="text-align: center;">这里是标题</h1>
+	</header>
+<main>
+	<div style="white-space: pre-wrap  ;">行     标签：包含a、span、em、strong、img、var；
+
+<mark>a标签：主要用来链接一个其他的网页；
+
+span标签：主要用来对行内的文字进行一些样式以及其他的操作；</mark>
+<!-- 用于显示重要内容，类似用荧光笔给书本做的标记 -->
+
+em标签：一般用来对文字进行强调，使用斜体体现出来；
+
+strong标签：一般用来对文字进行强调，使用加粗字体体现出来；
+
+img标签：图片引用标签，其中 src属性中写入图片的地址；
+
+var标签：JavaScript中命名变量的标签。
+
+块标签：包含p、div、ul、ol、li、dl、dt、dd、h1~h6；
+
+p标签：段落标签，段落文字使用，默认格式：段尾进行换行；
+
+div标签：划分块的主要使用标签；
+
+ul标签：无序列表的主标签，后面的标号为圆点（黑色）；
+
+ol标签：有序列表的主标签，后面一般跟有序的1,2,3,4,5...；
+
+li标签：列表中的主体使用标签
+
+dl标签：自定义标签的主标签；
+
+dt标签：自定义标签的表头；
+
+dd标签：自定义标签的表头的解释（描述）信息；
+
+h1~h6：6级标题标签、字体的大小依次变小。
+
+块标签和行标签的区别：
+
+块标签：独自占领一行、可以进行宽高的数值的设定；
+行标签：在一行内显示、不可以进行宽高的数值设定；
+嵌套规则
+
+块标签可以套行标签，行标签不可以套块标签。
+P标签不要套块属性标签，可以套a，span，文本。。。
+嵌套的时候注意代码的缩进。</div>
+	<!-- nav标签定义导航标签，在body标签中 -->
+	<nav></nav>
+	疯狂java教育中心的缩写是<abbr title="疯狂java教育">fkjava</abbr>
+    疯狂java软件的地址是 <address>安徽省马鞍山市花山区五栋102</address>
+    <p><dfn>html</dfn>是一种网页标记语言</p>
+
+	<details open="open">
+		<summary>CopyRight 2019</summary>
+		<p>All pages and graphics on this web site are the property of W3School.</p>
+	</details>  
+	<!-- open属性只有一个open值，表示默认情况下是打开的 -->
+	<p contenteditable="true">这是一段可以编辑的文本</p>
+	<p hidden="hidden">这是一段隐藏的段落</p>
+	hidden 属性规定对元素进行隐藏。
+<!-- 隐藏的元素不会被显示。如果使用该属性，则会隐藏元素。可以对hidden属性进行设置，使用户在满足某些条件时才能看到某个元素（比如选中复选框，等等）。然后，可使用 JavaScript 来删除 hidden 属性，使该元素变得可见。 -->
+    <p title="免费的呢">你觉得我收费不收费</p>
+    <a href="http://www.w3school.com.cn/" tabindex="2">W3School</a><br/>
+	<a href="http://www.google.com/" tabindex="1">Google</a><br/>
+	<a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
+	<!-- tabindex决定tab键次序 -->
+ 	<p><abbr title="世界卫生组织">WTO</abbr> 这是一个段落/p>
+ 	<p title="世界卫生组织">这种方式是连续的一段</p>
+ 	<!-- <bdi>标签允许您设置一段文本，使其脱离其父元素的文本方向设置。在发布用户评论或其他您无法完全控制的内容时，该标签很有用。 -->
+<ul>
+      <li>Username <bdi>Bill</bdi>:80 points</li>
+      <li>Username <bdi dir="ltr">Steve</bdi>: 78 points</li>
+</ul>
+
+    <a href="#top">返回顶部</a></main>
+<!--     address 标签定义文档或文章的作者/拥有者的联系信息。
+如果 address 元素位于 body 元素内，则它表示文档联系信息。
+如果 address 元素位于 article 元素内，则它表示文章的联系信息。<address> 元素通常连同其他信息被包含在 <footer> 元素中。 -->
+<address>
+Written by <a href="http://www.baidu.com">Donald Duck</a>.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<!-- <sup> 标签可定义上标文本。
+包含在 <sup> 标签和其结束标签 </sup> 中的内容将会以当前文本流中字符高度的一半来显示，但是与当前文本流中文字的字体和字号都是一样的。
+提示：这个标签在向文档添加脚注以及表示方程式中的指数值时非常有用。如果和 <a> 标签结合起来使用，就可以创建出很好的超链接脚注。 -->
+<p hidden="hidden">今天再来复习<sub>html</sub><sup>html</sup></p>
+</body>
+</html>

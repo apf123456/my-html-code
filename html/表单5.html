@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>表单5</title>
+</head>
+<body>
+	<form action="#" name="biaodan" id="biaodan">
+		<input type="text" name="hh" id="hh" placeholder="请在此输入" required="">
+		<label for="hh">填写名称</label>
+
+		<p><input type="submit" value="提交"><br><br></p>
+		<p>生成颜色选择<input type="color" name="color"><br></p>
+		<p>生成日期选择<input type="date" name="date"><br></p>
+		<p>生成时间选择<input type="time" name="time"><br></p>
+		<p>生成年月日时间选择<input type="datetime-local" name="datetime-local"><br></p>
+		<p>生成周选择<input type="week" name="week"></p>
+		<p>生成月份选择<input type="month" name="month"></p>
+		<p>规定只能输入电话号码的文本框实际上可以输入任意字符串，对手机端输入键盘有有作用，会使键盘显示仅仅数字<input type="tel" name="tel"></p>
+		<p>和tel一样，只能对手机端的输入键盘有作用，使得出现搜索键<input type="search" name="search"></p>
+		<p>与tel相反，用户必须输入url格式，如果不符合，则不会提交会显示错误<input type="url" name="url"></p>
+        <p>和url一样，若输入不符合email格式，则不会提交，并显示错误，可指定multiple属性，支持boolean，作用允许输入多个emai地址，中间用<span style="color: red"><b>逗号！</b></span>隔开<span><input type="email" name="email" multiple=""></p>
+        <p>只能输入数值的文本框，step规定的是步长<input type="number" name="number" min="0" max="100" step="10"></p>
+        <p>生成一个拖动条，用户允许拖动该拖动条来输入数值，step规定的是步长<input type="range" name="range" min="0" max="100" step="10"></p>
+
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>表单6</title>
+</head>
+<body>
+	<form name="haha" action="#" method="get">
+		<input type="range" name="range1" id="range1" step="5" min="0" max="100" onchange="out1.value=this.value;">
+		<output name="out1" for="range1"></output>
+		<progress value="30" max="100"></progress><!-- max指定完成时的进度值，value指定进度条当前完成的进度值 -->
+		<meter value="5" min="0" max="10" low="2" high="8" optimum="7"></meter><br>
+        <meter value="0.6">60%</meter>
+			<keygen name="security" />
+			<input type="submit" name="submit1">
+	</form>
+
+</body>
+</html>

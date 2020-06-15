@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>html元素3</title>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="3">
+	<meta http-equiv="Pragma" content="no-cache">
+
+
+</head>
+<body ondblclick="document.designMode='off';">
+	<p>我的我的的</p>
+	<p tabindex="1">我是1</p>
+    <p tabindex="3">我是3</p>
+    <p tabindex="2">我是2</p>
+    <!-- 默认情况下，tabindex主要对于a，area，button，input，select，textarea等交互元素作用，若是其它元素应用tabdindex，是没有必要的，所以，应该将tabindex的属性值设置为-1，这样避免用户按下tab获得焦点，但是又可以让脚本中获得这些焦点，这些元素，在js中可以调用他们的focus()方法来获得焦点 -->
+    <p contenteditable="true">这是可以编辑的文本</p>
+   <!--  contenteditable属性具有可继承的特点，如果一个html父元素是可编辑的，那么它也是可以默认可以编辑的，除非显示指定不可以编辑 -->
+    <table  cellpadding="10" ellspacing="20" border="10" id="target" ondblclick="this.contenteditable=true;" width="1500" height="800" >
+    	<tr>
+    		<td>双击即可以编辑</td>
+    		<td>双击即可以编辑</td>
+    	</tr><tr>
+    		<td>双击即可以编辑</td>
+    		<td>双击即可以编辑</td>
+    	</tr>
+    </table>
+</body>
+</html>

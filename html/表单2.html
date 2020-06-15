@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="emn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="refresh" content="10">
+    <meta name="author" content="apf">.
+    <meta name="website" content="http://www.mywebsite.com">
+    <meta name="keywords" content="java论坛,javascript论坛,等等">
+    <meta http-equiv="prama" content="no-cache">
+	<title>表单2</title>
+</head>
+<body>
+	<form action="#" method="get">
+		<fieldset name="" id="">
+			<legend>用户登录信息</legend><!-- 为fieldset设置标题 -->
+		<label for="username">单行文本框</label>
+		<input type="text" name="username" id="username" placeholder="请在此输入" autofocus="">
+		<label>密码框：<input type="password" name="password" id="password"></label>
+	    </fieldset>
+	    <br>
+		<!-- label标签用于对表单控件元素进行说明，有两种方式，隐式使用for属性，显示直接让普通文本和表单控件元素一起放在label标签内部即可 -->
+		<select id="books" name="books" size="2" >
+			<option value="java">java</option>
+			<option value="python">python</option>
+			<option value="php">php</option>
+			<option value="javascript" checked>javascript</option>
+			<option value="javascript1" checked>javascript1</option>
+			<option value="javascript2">javascript2</option>
+		</select><br>
+		 <select id="xuan" name="xuan">
+		 	<optgroup label="java体系">
+		 		<option value="java">java</option>
+		 		<option value="java1">java1</option>
+		 	</optgroup>
+		 	<optgroup label="python体系">
+		 		<option value="python">python</option>
+		 		<option value="python1">python1</option>
+		 		
+		 	</optgroup>
+		 	<input type="submit" value="注册" formaction="http://www.baidu.com/s">
+		 </select>
+
+	</form>
+	
+
+</body>
+</html>
