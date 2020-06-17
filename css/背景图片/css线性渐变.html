@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css线性渐变</title>
+</head>
+<style type="text/css">
+	#div1{
+		width: 200px;
+		height:200px;
+		border: 1px solid #000000;
+		margin: auto;
+		position: relative;
+	}
+</style>
+<body>
+<div id="div1" style="background: linear-gradient(red,blue);"></div>
+
+
+<button onclick="change(this.innerHTML);">to top</button>
+<button onclick="change(this.innerHTML);">to bottom</button>
+<button onclick="change(this.innerHTML);">to left</button>
+<button onclick="change(this.innerHTML);">to right</button>
+<button onclick="change(this.innerHTML);">to left top</button>
+<button onclick="change(this.innerHTML);">to right top</button>
+<button onclick="change(this.innerHTML);">to top right</button>
+<br>
+<div id="div2" style="background: linear-gradient(45deg,red 20%,blue 30%,yellow 40%,rgba(255,0,0,1) 60%);width: 200px;height: 200px;border: 2px solid #000;margin:50px auto;"></div>
+<div id="div2" style="background: repeating-linear-gradient(45deg,red 0%,blue 20%);width: 200px;height: 200px;border: 2px solid #000;margin:50px auto;"></div>
+<script type="text/javascript">
+	var a =function(){
+		for (var i =0; i <=15; i++) {
+			document.write("我是卢本伟"+"<br>");
+		}
+	}
+	a();
+	function change(val){
+		document.getElementById("div1").style.background="linear-gradient("+val+",red,blue)"
+	}
+</script>
+</body>
+</html>

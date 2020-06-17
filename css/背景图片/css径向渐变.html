@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>css径向渐变</title>
+	<style type="text/css">
+		div{
+			height: 300px;
+			width: 500px;
+			margin:100px auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1" style="background:radial-gradient(red,blue)"></div>
+	<button onclick="change(this.innerHTML);">left top</button>
+	<button onclick="change(this.innerHTML);">left center</button>
+	<button onclick="change(this.innerHTML);">left bottom</button>
+	<button onclick="change(this.innerHTML);">center top</button>
+	<button onclick="change(this.innerHTML);">center center</button>
+	<button onclick="change(this.innerHTML);">center bottom</button>
+	<button onclick="change(this.innerHTML);">right top</button>
+	<button onclick="change(this.innerHTML);">right center</button>
+	<button onclick="change(this.innerHTML);">right bottom</button>
+<script type="text/javascript">
+	function change(val){
+		document.getElementById("div1").style.background="radial-gradient(at "+val+",red,blue)";
+	}
+</script>
+
+</body>
+</html>

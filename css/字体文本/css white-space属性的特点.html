@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css white-space属性的特点</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 50px;
+			border: 1px solid #aaa;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+ <div style="white-space: pre-line;">源码空格不保留，但是换行保留，并且根据容器边界换行：hsdfs sdf ds fs s d fs sf sd f ds  fffds   ds </div>
+ <div style="white-space: pre;">源码空格和换行都保留，但是不会根据容器边界换行：sd adsdsadas d as d sda da  sd a ds dad as da a s </div>
+ <div style="white-space: pre-wrap;">源码空格换行都保留，并且根据容器边界换行：s da dasda dsa dad asd adewfswefwawsefaefase  </div>
+ <div style="white-space: nowrap;">源码空格和换行都忽略，并且不会根据容器边界换行sdda  dsad ad ddew wfwefwef w fewf w ew fwf w </div>
+ <div style="white-space: normal;">源码空格和换行都忽略，但是会根据容器边界换行sdda  dsad ad ddew wfwefwef w fewf w ew fwf w </div>
+</body>
+</html>

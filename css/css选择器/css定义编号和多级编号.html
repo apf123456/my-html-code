@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css定义编号和多级编号</title>
+    <style type="text/css">
+    	div>h2{
+    		counter-increment: categorycounter;
+    	}
+    	div>div{
+    		counter-increment: subcounter;
+    	}
+    	div>h2:before{
+    		content: counter(categorycounter，square);
+    		font-size: 20pt;
+    		font-weight: bold;
+    	}
+    	div>div:before{
+    		content: counter(subcounter);
+    		font-size: 14pt;
+    		font-weight: bold;
+    		margin-left: 24px;
+    	}
+    </style>
+</head>
+<body>
+	<div>
+		<h2>疯狂体系图书</h2>
+		<div>图书1</div>
+		<div>图书2</div>
+		<div>图书3</div>
+		<h2>其他图书</h2>
+		<div>图书4</div>
+		<div>图书5</div>
+	</div>
+
+</body>
+</html>

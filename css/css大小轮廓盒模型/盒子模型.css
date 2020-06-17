@@ -1,0 +1,52 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+.top{
+	width: 100%;
+	height: 50px;
+	background-color: #aaa;
+}
+.top_content{
+	width: 75%;
+	height: 50px;
+	margin: 0px auto;
+	background-color: blue;
+}
+.body{
+	margin: 20px auto 0px;
+	width: 75%;
+	height: 1500px;
+	background-color: #999;
+}
+.body_img{
+	width: 100%;
+	height: 400px;
+	background-color: orange;
+}
+.body_content{
+	width: 100%;
+	height: 1100px;
+	background-color: blueviolet;
+}
+.body_noti{
+	width: 100%;
+	height: 50px;
+	background-color: purple;
+}
+.footy{
+	width: 75%;
+	height: 420px;
+	margin: 20px auto 0px;
+	background-color: yellow;
+}
+.footy_content{
+	width: 100%;
+	height: 350px;
+	background-color: green;
+}
+.foot_nav{
+	width: 100%;
+	height: 70px;
+	background-color: black;
+}

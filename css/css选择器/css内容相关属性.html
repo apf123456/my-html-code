@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css内容相关属性</title>
+	<style type="text/css">
+		div>div{
+			quotes: "<<" ">>";
+			/*为content定义两个以空格为分隔的字符串，前面的字符串是open后面的是close*/
+		}
+		div>div:before{
+			content: open-quote;
+		}
+		div>div:after{
+			content: close-quote;
+		}
+		/*content内容可以是url（只能插入图像），counter（name），arrr（alt），conter（name，list-style-type），open-quote，close-quote等格式 */
+		p:before{
+			content: "这是段落的一开始:";
+			color: blue;
+		}
+		p:after{
+			content: "这是段落的结束";
+			color: red;
+		}
+		span.hh:before{
+			content: url("beijing1.jpg");
+		}
+	</style>
+</head>
+<body>
+ <div>
+ 	<div>java</div>
+ 	<div>php</div>
+ 	<div>javascript</div>
+ 	<p>这是一段文字</p>
+ 	<p>这是一段文字</p>
+ 	<span class="hh">这是加的一段图片</span>
+ </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css大小相关属性</title>
+	<style type="text/css">
+		div>div{
+			border: 1px solid #fff;
+			display: inline-block;
+			margin: 5px;
+			box-sizing: border-box;
+			width: calc(50% - 14px);
+			height:calc(100% - 10px);
+		}
+	</style>
+</head>
+<body>
+	<div style="background-color: blue;box-sizing: content-box;width: 300px;height: 300px;border: 50px solid #EEEEEE;margin: 50px">这是一个盒模型</div>
+	<div style="background-color: blue;box-sizing: border-box;width: 300px;height: 300px;border: 50px solid #EEEEEE;margin: 50px;resize:none;">这是一个盒模型</div>
+	<div style="background-color: blue;box-sizing: border-box;width: 300px;height: 300px;border: 50px solid #EEEEEE;margin: 50px;resize:vertical;overflow: auto;">这是一个盒模型</div>
+	<div style="background-color: blue;box-sizing: border-box;width: 300px;height: 300px;border: 50px solid #EEEEEE;margin: 50px;resize: both;overflow: auto;">这是一个盒模型</div>
+	<div style="background-color: blue;box-sizing: border-box;width: 300px;height: 300px;border: 50px solid #EEEEEE;margin: 50px;resize: horizontal;overflow: auto;">这是一个盒模型</div>
+	<div style="height: 500px;width: 500px;background-color:red;">
+		<div style="background-color: blue;"></div>
+		<div style="background-color: yellow;"></div>
+	</div>
+
+
+
+</body>
+</html>

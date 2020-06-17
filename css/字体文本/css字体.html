@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css字体</title>
+	<style type="text/css">
+	/*	@font-face {
+			font-family: 自定义字体名字或者服务器字体名;
+            src:local("优先使用字体"),url("下载或者服务器字体.tff") format("TrueType");目前仅支持TrueType的文字类型
+		}*/
+	</style>
+</head>
+<body>
+<span style="font-style: normal;">这是一段文字</span><br> <!-- 系统默认字体大小16px -->
+<span style="font-style: italic;">这是一段文字</span><br><!-- 斜体字，若特殊的字体没有斜体字，应用倾斜的文字！ -->
+<span style="font-style: oblique;">这是一段文字</span><br><!-- 倾斜的文字 -->
+<span style="font-family:'隶书';font-style: oblique;font-size: 12px;color: red;" >这是一段文字</span><br><!-- 倾斜的文字 -->
+<span style="font-size: 3.8em;color: blue;font-style: oblique;">这是一段文字</span><br>
+<span style="font-size: 3.8em;font-weight:bold;color: blue;font-style: oblique;">这是一段文字</span><br>
+<span style="font-size: 3.8em;font-weight:80;color: blue;font-style: oblique;">这是一段文字</span><br> <!-- font-weight 400相当于normal正常粗细，700相当于粗bold;一般是100-900之间 -->
+<span style="font-style: normal;font-stretch: narrower">这是一段文字</span><br> 
+<span style="font-style: normal;font-stretch: wider">这是一段文字</span><br><br>  <!-- 目前系统不支持这个属性 -->
+<span style="font-style: normal;text-decoration: underline;">这是一段文字</span><br> 
+<!-- decoration有许多属性包括none,underline,line-through,overline,blink，无修饰，下划线，中划线，上划线，闪烁 -->
+<span style="font-style: normal;line-height:50；">这是一段文字<br>这是一段文字</span><br> 
+<!-- 设置行间距，目前不支持这个属性。line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。 -->
+<span style="font-style: normal;letter-spacing: 20px">这是一段文字</span><br> <!-- 设置字符之间的间隔默认无间隔 -->
+<span style="font-style: normal;word-spacing: 20px">这是一段文字 这是一段文字</span><br> <!-- 系统默认字体大小16px -->
+<span style="font-style: normal;text-transform: capitalize;">this is word</span><br> <!-- 设置文字大小写 属性包括：none，capitalize，uppercase，lowercase默认，设置所有首字母大写，所有字母大写，所有字母小写 -->
+<span style="font-variant: small-caps;">This Is</span><!-- 将小写字母全部转换为小型的大写字母，两个属性normal，small-caps -->
+</body>
+</html>

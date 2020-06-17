@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css inline-block盒模型</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+		#container{
+			width: 1200px;
+			border: 1px solid #000000;
+			margin: 0px;
+			padding: 0px;
+		}
+		div>div{
+			border:1px solid #aaf;
+			display: inline-block;
+			box-sizing: border-box;
+			vertical-align: bottom;
+			padding: 5px;
+           }
+	</style>
+</head>
+<body>
+	<p style="white-space: pre-line;">
+		1 block此元素将显示为块级元素，此元素默认前后各有换行符。这种盒模型默认占据一行，允许通过css设置宽度，高度，例如div，p，h1到h6，ol，ul，dl，table，blockquote，form
+		2 inlin此此元素会被显示为内联元素，元素前后没有换行符。这种盒模型元素不会占据一行，默认允许一行放置多个元素，即使css设置高度和宽度也不起作用。例如span，a，br，em，strong，label，q，var，cite，code
+		3 inline-block 是前两者的综合体，行内块元素。不会默认占据一行，并且可以设置宽度和高度，这样设置可以使得多个div元素并列显示，可以实现多栏布局，默认采用底端对齐模式。
+	</p>
+	<div id="container">
+		<div style="width:220px;margin: 0px;">
+			 打多少 使得ad啊使得阿魏酸的啊啊啊按说 dd   ds   啊
+		</div><div style="width: 300px;margin: 0px;">
+			的的都是 ad啊是啊大叔sad按说 啊 啊
+		</div><div style="width: 440px;margin: 0px;">
+			的的都是 ad啊是啊大叔sad按说 啊 啊
+		</div>
+	</div>
+
+</body>
+</html>

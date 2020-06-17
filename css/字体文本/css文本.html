@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css文本</title>
+	<style type="text/css">
+		div.div1{
+			border:1px solid #000000;
+			height: 30px;
+			width:200px;
+		}
+		div.div2{
+			border: 1px solid #000000;
+			height: 30px;
+			width:  120px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1" style="text-indent: 20px;background-color: blue">测试文字</div>
+	<div class="div1" style="text-indent: 40px;color:rgba(250,250,0,0.8);">测试文字</div>
+	<div class="div1" style="text-align: center;">测试文字</div>
+	<div class="div1" style="text-align: right;">测试文字</div>
+	<div class="div1" style="text-align: left;">测试文字</div>
+	<div class="div1" style="direction:ltr;">测试文字测试文字</div><!-- 正常方向从左到右 -->
+	<div class="div1" style="direction:rtl;">测试文字测试文字</div><!-- 古汉语阿拉伯语从右向左 -->
+	<div class="div1" style="text-indent: 20px;background-color: blue;white-space: pre">测    试 文    字</div>
+	<div class="div1" style="text-indent: 20px;background-color: blue;white-space: pre-wrap;">测    试 文    字</div>
+	<div class="div1" style="text-indent: 20px;background-color: blue;white-space: pre-line;">测    试 文    字</div>
+	<div class="div1" style="text-indent: 20px;background-color: blue;white-space: normal;">测 sddasdddsdadadadawdawdawdawdwd</div>
+<!-- 忽略空白-->
+	<div class="div1" style="text-indent: 20px;background-color: blue;word-break: keep-all;">ik oko kok jk osdsd isdsd jsdi joi iji </div><!-- 不允许在单词内换行 只能在半角空格或者连字符处换行-->
+	<div class="div1" style="text-indent: 20px;background-color: blue;word-break: break-all;">ik oko kok jk osdsd isdsd jsdi joi iji </div> <!-- 允许在单词中间换行-->
+    <div class="div2" style="text-align: left;word-wrap: normal;">wdwdwdwadadwdwdawdawdawdawd</div>
+    <div class="div2" style="text-align: left;word-wrap: break-word;">wdwdwdwadadwdwdawdawdawdawd</div>
+    <!-- 默认情况下，当一个特别长的单词让一行装不下时，会超到这一行外边，西方文字在单词内不会换行，汉字会在单词内换行，所以当输入英文或者url时，若单词过长，可以两种方法：1 设置单词内允许换行，即只要有长单词超过剩余部分就可以换行 2 不允许换行，但是单词都已经超过了一行大小，实在不行，则允许换行 -->
+</body>
+</html>

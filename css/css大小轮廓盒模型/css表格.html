@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css表格</title>
+	<style type="text/css">
+		table{
+			border:1px solid #0f0;
+			width:400px;
+		}	
+		td{
+			border: 1px solid #0ff;
+			background-color: #ccc;
+			height: 50px;
+			text-align: center;vertical-align:top;
+		}	
+	</style>
+</head>
+<body>
+<table style="border-collapse:separate;caption-side: bottom;empty-cells: hide;">
+	<p style="white-space: pre-line;">
+    1 caption-side设置标题位置有top bottom left right四个选项
+	2 border-collapse设置单元格边框是分开还是合并有collapse合并和saperate分开即双线
+	3 empty-cells设置当单元格没有内容时，是否显示单元格边框，只有border-collapse设置为seperate时才有效值为hide和show
+	4 borderspacing设置两个单元格边框的间距，只有border-collapse设置为seperate时才有效</p>
+	<caption>这是表格</caption>
+	<tr>
+		<td>单元格1</td>
+		<td>单元格2</td>
+		<td>单元格3</td>
+	</tr><tr>
+		<td>单元格1</td>
+		<td>单元格2</td>
+		<td></td>
+	</tr>
+</table>
+</body>
+</html>

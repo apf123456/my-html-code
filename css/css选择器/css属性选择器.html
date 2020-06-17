@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>属性选择器</title>
+	<style type="text/css">
+		div{ /*元素选择器（特殊的属性选择器）*/
+			width: 300px;
+			height: 30px;
+			background-color: #eee;
+			border: 1px solid black;
+			padding: 10px;
+            }
+            div[id]{ /*对所有含有id的属性的div作用*/
+            	background-color: #aaa;
+            }
+            div[id*=xx]{
+            	/*对id属性值包含xx的div元素作用*/
+            	background-color: #999;
+            }
+            div[id^=xx]{
+            	/*对id属性以xx开头的div元素起作用*/
+            	background-color: #555;
+            	color: #fff;
+            }
+            div[id=xx]{
+            	/*对id属性等于xx的div元素作用*/
+            	background-color: #111;
+            	color: #fff;
+            }
+	</style>
+</head>
+<body>
+ <div>没有带任何属性的div元素</div>
+ <div id="q">具有id属性的元素</div>
+ <div id="zzxx">id属性中带有xx的元素</div>
+ <div id="xxzz">id属性以xx开头的元素</div>
+ <div id="xx">id属性为xx的元素</div>
+
+</body>
+</html>
