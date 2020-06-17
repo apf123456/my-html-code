@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>javascript初步</title>
+</head>
+<body>
+<script>
+    document.writeln("浏览器的版本为："+navigator.appVersion);
+    document.writeln("浏览器的名称为："+navigator.appName);
+	document.writeln("浏览器的发行代号为："+navigator.CodeName);
+
+	function test1() {
+		alert("111");
+		return 5;
+	}
+	alert(test1());
+	try{
+        for(i=0;i<10;i++){
+           document.writeln("i"+ "<br>");
+         }
+         if (i>4)
+         	throw new Error ("用户自定义错误");
+         }
+    catch(e){
+    	document.writeln("系统出现异常"+"<br>");
+
+    }
+    finally{
+    	document.writeln("系统必须执行的finally块");
+    }
+</script>
+</body>
+</html>

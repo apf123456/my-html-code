@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+<script type="text/javascript">
+var arr = new Array();  
+  
+//随便创建关联数组的数据如下：  
+  
+arr["name"] = "mary";  
+  
+arr["age"] = "3";  
+  
+arr["sex"] = "man";  
+  
+//利用 for 循环遍历如下：  
+for( var key in arr)  
+{  
+      // 则上面 key 变量所取的值为 "name" 或 "age" 或 "sex"，  
+    //而不是数组的值  
+    // 下面的 value 才是取到对应的值  
+    alert(arr[key]);  
+}
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

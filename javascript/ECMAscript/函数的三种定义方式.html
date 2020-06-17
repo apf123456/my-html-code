@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>函数的三种定义方式</title>
+</head>
+<body>
+	<script>
+		function a(){
+			document.writeln("这是第一种函数定义方式");
+		}
+		var b= function(){
+			document.writeln("这是第二种函数定义方式");
+		};
+		var c=new Function("name","document.writeln('这是第二种函数定义方式'+name);");
+		a();
+		b();
+		c("hhhhhh");
+	</script>
+
+</body>
+</html>

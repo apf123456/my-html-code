@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>函数的参数处理</title>
+	<script type="text/javascript">
+		function changeAge(person){
+			person.age=10;
+			document.writeln("函数执行中person的age属性的值为"+person.age+"</br>");
+			person=null;
+		}
+		var person={age:5};
+		document.writeln("函数调用前的person.age属性值为"+person.age+"</br>");
+		changeAge(person);
+		document.writeln("函数调用后的person.age属性值为"+person.age+"</br>");
+		document.writeln("person对象为："+person);
+			</script>
+</head>
+<body>
+<p style="white-space: pre-line;">javascript对于基本类型的数据和复合类型的数据均采用值传递的方式，但是，复合类型的变量只是一个引用，并未持有对象本身，该引用指向实际的javascript对象，由于和原person变量指向同一个js对象，故而实际修改的是同一个对象，相当于这个person的引用，而非person指向对象的引用</p>
+</body>
+</html>

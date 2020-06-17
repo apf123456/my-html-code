@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>let变量代替var用法</title>
+</head>
+<!-- 1 let只在for循环中有效，除了循环无效
+     2 let定义的全局变量不会成为window对象的属性
+     3 let定义的变量不会提前装载，只有运行到定义变量的地方时才会装载-->
+<body>
+	<script>
+		function text(){
+			for(let i=0;i<=10;i++){
+				document.writeln(i);
+			}
+		}
+		text();
+       function text1(){
+       	document.writeln(name);
+       	var name=5;
+       	document.writeln(name);
+       }
+       text1();
+      /* function text2(){
+       	document.writeln(name);
+       	let name=5;
+       	document.writeln(name);
+       }
+       text2();
+*//* 以上代码会错误，而无法运行*/
+      var haha=5;
+      alert(window.haha);
+      let hh=6;
+      alert(window.hh);
+   /*   这里会undefined*/
+
+
+
+
+	</script>
+
+</body>
+</html>

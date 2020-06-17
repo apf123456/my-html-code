@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- 当页面加载时onload被触发 -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>dom编程之onload</title>
+</head>
+<body onload="mymessage()">
+<h1 onmouseover="style.color='red'" onmouseout="style.color='blue'" onmousemove="style.color='yellow'">请把鼠标放到文字上</h1>
+
+</body>
+</html>
+<script type="text/javascript">
+	function mymessage(){
+		alert("这件事会被触发");
+	}
+</script>
